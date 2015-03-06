@@ -1,0 +1,20 @@
+<h1>Welcome!</h1>
+
+<div style="display: inline-block; width:400px; height:1200px; vertical-align:top; background-color:lavender"><h3>Here are the users:</h3>
+<% @users.each do |user| %>
+	<p>name: <%= user.name %> <br \> 
+		email: <%= user.email%> <br \>
+		age: <%= user.age%> <br \></p>
+<%end%></div>
+
+<div style="display:inline-block; width:400px; height:1200px; vertical-align:top; background-color:lemonchiffon"><h3>Here are the cats:</h3>
+<% @cats.each do |cat| %>
+	<p>name: <%= cat.name %></p>
+<%end%></div>
+
+<div style="display:inline-block; width:400px; height:1200px; vertical-align:top; background-color:mediumaquamarine"><h3>Here are the desserts:</h3>
+<% @desserts.each do |dessert| %>
+	<p>name: <%= dessert.name %> <br \> 
+		description: <%= dessert.description%> <br \>
+		price: <%= dessert.price%> <br \></p>
+<%end%>
